@@ -23,6 +23,18 @@
 
  */
 
+function add() {
+	return 4+6;
+};
+
+echo add()."<br>";
+
+ function calculation(float $a, float $b): float {
+	 return $a + $b;
+ }
+echo calculation(1.4,3.9);
+
+
 	
 ?>
 

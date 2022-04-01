@@ -24,6 +24,31 @@
 	Step 3 : Make a switch Statement that test againts one condition with 5 cases
 
  */
+if(1>3){
+	echo "There it is";
+} elseif (2>4) {echo "I hate php";}
+ else { echo "I love php <br>";};
+
+ for($i=0; $i<=10; $i++) {
+	 echo "$i <br>";
+ }
+
+ $colorss = "Blue";
+ switch ($colorss) {
+	case "red":
+		echo "This is red";
+		break;
+	case "lightblue";
+		echo "this is light blue";
+		break;
+	case "Blue";
+		echo "This is blue";
+		break;
+	case "yellow";
+		echo "This is yellow";
+		break;
+ }
+
 
 	
 ?>

@@ -24,6 +24,18 @@
 	Step 3:  Use a pre-built Array function here and echo it
 
  */
+echo abs(-4.5). "<br>";
+echo exp(3). "<br>";
+echo floor(4.9). "<br>";
+echo max([3,7,9,10]). "<br>";
+echo sqrt(5.5). "<br>";
+echo round(4.5). "<br>";
+echo srand(8). "<br>";
+
+
+
+
+
 
 	
 ?>

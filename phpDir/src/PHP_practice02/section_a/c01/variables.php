@@ -4,6 +4,8 @@
   Write you php code here
 
    */
+  $name = "Fazer";
+  $cost = "5 Euro";
 
 ?>
 <!DOCTYPE html>
@@ -16,6 +18,7 @@
 
 <body>
   <h1>The Candy Store</h1>
+  <p><?= $name ," : ",   $cost ?></p>
 
 </body>
 

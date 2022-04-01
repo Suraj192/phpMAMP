@@ -16,6 +16,19 @@
 
 
 		<?php
+$number1 = 10;
+$number2 = 20;
+
+echo $number1 + $number2;
+
+$arr_ass = ['number1' => 10, 'number2' => 20];
+
+$arr_reg = [10, 20];
+
+echo " ".$arr_ass['number1'];
+echo " ".$arr_reg[1];
+
+
 
 
 
