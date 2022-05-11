@@ -1,5 +1,10 @@
-<?php include "functions.php";?>
+<?php include 'db.php'; 
+$query = "SELECT * FROM Users";
+$result = mysqli_query($connection, $query);
 
+if(!$result) {
+    die('Query selection failed');
+}?>
 <style>
     <?php include 'style.css'?>
 </style>
@@ -8,7 +13,7 @@
 <body>
 <div id='main'>   
     <h2>Speed Conversion</h1>
-    <form action="speedMeasuremet.php" method="post">
+    <form action="speedmeasuremet.php" method="post">
         <div>
             <label for="kmhr">Km/hr</label>
             <input type="number" id="kmhr" name="kmhr" placeholder="Input Value here" step="any" min=0>
@@ -33,14 +38,14 @@
     $ms = $_POST['ms'];
     $knots = $_POST['knots'];
 
-    if($kmhr!=null) { ?>
+    if(isset($kmhr)) { ?>
         <p> <?php echo round($kmhr*(10/36),2)." m/s<br>";
-        echo round($kmhr/1.852, 2)." knots<br>";?>
+        echo round($kmhr[0]/1.852, 2)." knots<br>";?>
     </p> <?php
-    } elseif ($ms!=null) { ?>
+    } elseif (isset($ms)) { ?>
         <p> <?php echo round($ms*(36/10),2)." Km/hr<br>";
         echo round($ms*1.94384, 2)." knots<br>"?></p> <?php
-    } elseif($knots!=null) { ?>
+    } elseif(isset($knots)) { ?>
         <p> <?php echo round($knots*1.852,2)." Km/hr<br>";
         echo round($knots/1.94384, 2)." m/s<br>"?></p> <?php
     }
